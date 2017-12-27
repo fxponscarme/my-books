@@ -1,9 +1,9 @@
 {
   "name": "my-books",
-  "version": "0.0.0",
-  "author": " <francois-xavier.ponscarme@zenika.com>",
+  "version": "0.1.0",
+  "author": " <fx.ponscarme.pro@gmail.com>",
   "description": "Book catalog Electron Application",
-  "license": null,
+  "license": "MIT License",
   "main": "./dist/electron/main.js",
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
