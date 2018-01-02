@@ -9,20 +9,25 @@
 import Search from './ContentPane/Search'
 import SystemInformation from './ContentPane/SystemInformation'
 
+import {
+  mapState
+} from 'vuex'
+
 export default {
   name: 'content-pane',
-  props: [
-    'currentPane'
-  ],
   components: {
     Search,
     SystemInformation
   },
   data () {
     return {
-      // currentPane: Search,
       panes: [Search, SystemInformation]
     }
+  },
+  computed: {
+    ...mapState('Application', {
+      currentPane: state => state.currentPane
+    })
   }
 }
 </script>

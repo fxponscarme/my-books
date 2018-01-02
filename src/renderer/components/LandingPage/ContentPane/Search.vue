@@ -3,7 +3,7 @@
     <section class="section">
       <div class="container-fluid">
         <div class="title">
-          Welcome to your new project!
+          Add your new Book !
         </div>
         <div class="columns is-mobile is-centered">
           <div class="column is-one-quarter">
