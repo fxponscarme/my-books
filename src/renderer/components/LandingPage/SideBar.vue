@@ -2,17 +2,23 @@
   <div class="pane-sm sidebar">
     <nav class="nav-group">
       <h5 class="nav-group-title">Favorites</h5>
-      <a class="nav-group-item" @click="updatePane('Search')">
+      <a  class="nav-group-item"
+          :class="{'active': currentPane === 'Books'}"
+          @click="updatePane('Books')">
         <span class="icon icon-book"></span>
         Library
       </a>
-      <span class="nav-group-item" :class="{'active': currentPane === 'Search'}" @click="updatePane('Search')">
+      <span class="nav-group-item"
+            :class="{'active': currentPane === 'Search'}"
+            @click="updatePane('Search')">
           <span class="icon icon-download"></span> Add a Book
       </span>
       <span class="nav-group-item" @click="updatePane('Search')">
           <span class="icon icon-archive"></span> Collections
       </span>
-      <a class="nav-group-item" :class="{'active': currentPane === 'SystemInformation'}" @click="updatePane('SystemInformation')" >
+      <a class="nav-group-item"
+          :class="{'active': currentPane === 'SystemInformation'}"
+          @click="updatePane('SystemInformation')" >
           <span class="icon icon-tools"></span>
           Preferences
       </a>

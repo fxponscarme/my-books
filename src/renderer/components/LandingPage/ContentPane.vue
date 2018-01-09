@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import Books from './ContentPane/Books'
 import Search from './ContentPane/Search'
 import SystemInformation from './ContentPane/SystemInformation'
 
@@ -16,6 +17,7 @@ import {
 export default {
   name: 'content-pane',
   components: {
+    Books,
     Search,
     SystemInformation
   },
